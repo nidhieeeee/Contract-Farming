@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(73, 245, 73); 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:70px;
+}
+.icon svg{
+    height:370px;
+    width: 370px;
+}
+.icon p{
+    font-size: 1.9rem;
+}
+
+.login{
+    height: 60vh;
+    width: 500px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.login header{
+    margin-top:80px ;
+    font-size: 3.8rem;
+
+}
+#email , #password{
+    width: 400px;
+    /* padding: 5px 0px 5px 0px; */
+    height: 40px;
+    margin-top: 25px;
+    margin-left:10px ;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(216, 228, 207);
+    border: none;
+}
+#button{
+    /* padding: 5px 15px 5px 15px; */
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    margin: 28px;
+    border: none;
+}
+@media (max-width:768px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .icon svg{
+        height: 120px;
+        width: 120px;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        width: 320px;
+        margin-top: 0px;
+    }
+    .icon p{
+        font-size: 2rem;
+        width: 200px;
+    }
+    .login{
+        height: 380px;
+        width: auto;
+        margin: 0px 10px 10px 0px;
+    }
+    .login header{
+        margin-top: 30px;
+    }
+    #email , #password{
+        margin: 20px
+    }
+    #button{
+        height: 50px;
+        width: 200px;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+}
